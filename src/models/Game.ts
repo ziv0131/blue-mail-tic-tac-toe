@@ -1,8 +1,8 @@
 export type PlayerSymbol = 'X' | 'O';
-export type Board = (PlayerSymbol | null)[];
+export type Board = (PlayerSymbol | null)[][];
 
 export interface Game {
   board: Board;
   turn: PlayerSymbol;
-  players: string[]; // socket IDs
+  players: string[];
 }
